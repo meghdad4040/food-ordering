@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="text"],
+select {
+  @apply block w-full mb-2 rounded-xl focus:outline-best focus:outline dark:focus:outline-darkBest focus:border-0;
+  @apply border p-2 border-gray-300 bg-gray-200 text-gray-500 dark:bg-slate-500 dark:border-gray-800 dark:text-gray-800 outline-none;
+}
+input[type="email"]:disabled,
+input[type="tel"]:disabled,
+input[type="password"]:disabled,
+input[type="text"]:disabled {
+  @apply bg-gray-300 text-gray-400  cursor-not-allowed dark:bg-slate-500 dark:text-gray-700;
+}
+
+form > button,
+form > * > * > button {
+  @apply block w-full text-gray-700 font-semibold mt-4;
+  @apply border border-violet-600 rounded-xl px-6 py-2 hover:bg-violet-400 hover:text-white transition-all dark:border-0;
+}
+
+.btndelete {
+  @apply text-white hover:text-black;
+  @apply bg-red-500 btn text-white btn-xs rounded-lg shadow-2xl duration-300 hover:bg-red-400 transition-all border-0;
+}
+button[type="submit"],
+.submit {
+  @apply border-best bg-best dark:bg-darkBest dark:border-darkBest text-white hover:bg-violet-400 dark:hover:bg-orange-400 hover:text-black transition-all outline-none;
+}
+
+.delete {
+  @apply block w-full font-semibold mt-4;
+  @apply rounded-xl px-6 py-2 transition-all outline-none bg-rose-600;
+  @apply text-white hover:bg-rose-500 hover:text-black border-rose-400;
+}
+button[type="submit"]:disabled,
+.submit:disabled {
+  @apply cursor-not-allowed bg-violet-400 hover:text-white;
+}
+
+div.usertab > * {
+  @apply bg-gray-300 text-gray-700 rounded-full py-2 px-4 hover:translate-y-1 transition-transform duration-300;
+}
+
+div.usertab > *.active {
+  @apply bg-best text-white dark:bg-darkBest;
+}
+
+form > label,
+div > label {
+  @apply block text-gray-700 dark:text-gray-400 text-sm font-bold;
+}
