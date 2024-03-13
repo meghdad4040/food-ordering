@@ -4,10 +4,10 @@ import SectionHeaders from "@/components/layout/SectionHeaders";
 
 export default function Home() {
   return (
-    <section className=' container max-w-4xl'>
+    <section className=' container max-w-3xl xl:max-w-5xl'>
       <Hero />
       <HomeMenu />
-      <section className=' text-center my-10'>
+      <section id="about" className=' text-center my-10'>
         <SectionHeaders
           subHeader={"Our Story"}
           mainHeader={"About us"}
@@ -33,7 +33,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className=' text-center my-10'>
+      <section id="contact" className=' text-center my-10'>
         <SectionHeaders
           subHeader={"Don't hesitate"}
           mainHeader={"Contact us"}

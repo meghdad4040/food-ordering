@@ -43,11 +43,11 @@ button[type="submit"]:disabled,
 }
 
 div.usertab > * {
-  @apply bg-gray-300 text-gray-700 rounded-full py-2 px-4 hover:translate-y-1 transition-transform duration-300;
+  @apply md:bg-gray-300 md:text-gray-700 md:rounded-full md:py-2 md:px-4 hover:translate-y-1 transition-transform duration-300;
 }
 
 div.usertab > *.active {
-  @apply bg-best text-white dark:bg-darkBest;
+  @apply text-best dark:text-darkBest md:bg-best md:text-white md:dark:bg-darkBest md:dark:text-white   underline md:no-underline;
 }
 
 form > label,

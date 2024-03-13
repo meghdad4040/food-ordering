@@ -11,7 +11,7 @@ const MenuItemForm = ({ onSubmit, onDelete, menuItem }) => {
  const [image, setImage] = useState(menuItem?.image || "")
  const [name, setName] = useState(menuItem?.name || "")
  const [description, setDescription] = useState(menuItem?.description || "")
- const [basePrise, setBasePrise] = useState(menuItem?.basePrise || "")
+ const [basePrice, setBasePrice] = useState(menuItem?.basePrice || "")
  const [sizes, setSizes] = useState(menuItem?.sizes || [])
  const [extraIngredientPrices, setExtraIngredientPrices] = useState(menuItem?.extraIngredientPrices || [])
  const [categories, setCategories] = useState([])
@@ -36,7 +36,7 @@ const MenuItemForm = ({ onSubmit, onDelete, menuItem }) => {
      <EditableImage link={image} setLink={setImage} />
     </div>
     <div className="grow">
-     <form onSubmit={(e) => onSubmit(e, { name, image, description, basePrise, sizes, extraIngredientPrices, category })}
+     <form onSubmit={(e) => onSubmit(e, { name, image, description, basePrice, sizes, extraIngredientPrices, category })}
       className="bg-white/10  dark:bg-black/10 shadow-2xl rounded px-8 pt-6 pb-8 mb-4">
       <label htmlFor="name">Item name</label>
       <input value={name} onChange={(e) => setName(e.target.value)} id="name" type="text" />
@@ -48,8 +48,8 @@ const MenuItemForm = ({ onSubmit, onDelete, menuItem }) => {
         <option key={c._id} value={c._id}>{c.name}</option>
        ))}
       </select>
-      <label htmlFor="prise">Base price</label>
-      <input value={basePrise} onChange={(e) => setBasePrise(e.target.value)} id="prise" type="text" />
+      <label htmlFor="price">Base price</label>
+      <input value={basePrice} onChange={(e) => setBasePrice(e.target.value)} id="price" type="text" />
       <MenuItemPriceProps name={"Sizes"}
        addLabel={"Add item size"}
        props={sizes}

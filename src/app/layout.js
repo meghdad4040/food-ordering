@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children, session }) {
   return (
     <html
-      className='bg-gray-100  dark:bg-gray-800'
+      className='bg-gray-100 dark:bg-gray-800 scroll-smooth w-full h-screen box-border p-0 m-0'
       lang='en'>
       <body className={` dark:bg-gray-800 ${roboto.className}`}>
         <ProviderTheme>

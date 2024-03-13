@@ -38,11 +38,11 @@ const page = () => {
  return (
   <section className=" max-w-xl mx-auto mt-8">
    <UserTabs isAdmin={data.isAdmin} />
-   <div className=" mt-8">
+   <div className="mt-8">
     {users?.length > 0 && users.map(user => (
-     <div key={user._id} className=" bg-gray-300 text-xs dark:bg-zinc-800 dark:text-slate-300 rounded-lg text-gray-700 mb-2 p-1 px-4 flex items-center gap-4">
-      <div className=" grid grid-cols-2 md:grid-cols-3 gap-4 grow">
-       <div className="">
+     <div key={user._id} className="bg-gray-300 mx-auto max-w-[12rem] md:max-w-xl text-xs dark:bg-zinc-800 dark:text-slate-300 rounded-lg text-gray-700 mb-2 py-3 px-4 flex flex-col md:flex-row items-center gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:grow">
+       <div className="text-center md:text-start">
         {!!user.name && (<span>{user.name}</span>)}
         {!user.name && (<span className=" italic">No name</span>)}
        </div>

@@ -76,10 +76,10 @@ const Navbar = () => {
               <Link href={"/menu"}>Menu</Link>
             </li>
             <li className={`duration-[2000ms] ease-linear transition-transform `}>
-              <Link href={"/about"}>About</Link>
+              <Link href={"/#about"}>About</Link>
             </li>
             <li className={`duration-[2500ms] ease-linear transition-transform `}>
-              <Link href={"/contact"}>Contact</Link>
+              <Link href={"/#contact"}>Contact</Link>
             </li>
           </motion.ul>
         </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
       <div className='order-1 lg:order-3 hidden lg:flex w-1/3 justify-end '>
         <ul className=' flex gap-4 *:text-sm dark:*:text-gray-100 *:text-gray-700 hover:*:text-gray-400 hover:*:translate-y-1 *:transition *:duration-300 px-2'>
           <li>
-            <Link href={"/contact"}>
+            <Link href={"/#contact"}>
               <div
                 className={` ${pathname === "/contact" ? "border-b-2 border-orange-600" : ""
                   }`}>
@@ -131,7 +131,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href={"/about"}>
+            <Link href={"/#about"}>
               <div
                 className={` ${pathname === "/about" ? "border-b-2 border-orange-600" : ""
                   }`}>

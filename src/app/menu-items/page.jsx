@@ -48,9 +48,9 @@ const page = () => {
     <h2 className=" text-sm text-gray-500 dark:text-gray-300 mt-8">
      Edit menu item:
     </h2>
-    <div className=" grid grid-cols-3 gap-2 my-4">
+    <div className=" grid grid-cols-1 md:grid-cols-3 gap-2 justify-items-center my-4">
      {menuItems?.length > 0 && menuItems.map(item => (
-      <Link className=" flex flex-col justify-center items-center btn btn-outline h-auto w-full hover:shadow-lg hover:shadow-black dark:hover:shadow-gray-400 hover:scale-105"
+      <Link className=" max-w-[12rem] md:max-w-prose flex flex-col justify-center items-center btn btn-outline h-auto w-full hover:shadow-lg hover:shadow-black dark:hover:shadow-gray-400 hover:scale-105"
        href={"/menu-items/edit/" + item._id}
        key={item._id}>
        <Image priority={true}
