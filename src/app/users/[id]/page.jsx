@@ -20,8 +20,8 @@ const page = () => {
  }, []);
 
  // -------------fetchData by axios-------------
- const fetchData = () => {
-  axios("/api/users").then((res) => {
+ const fetchData = async () => {
+  await axios("/api/users").then((res) => {
    const users = res.data
    const user = users.find(u => u._id === id)
    setUser(user)
