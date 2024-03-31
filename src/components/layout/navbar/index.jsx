@@ -50,7 +50,7 @@ const Navbar = () => {
     <ChangeTheme />
     <Link href={"/cart"} className=" relative text-gray-900 dark:text-gray-300 me-3">
      <PiShoppingCartBold />
-     <span className=" absolute -top-2 left-4 bg-best dark:bg-darkBest dark:text-black text-white text-xs p-[0.1rem] rounded-full">{cartProducts.length}</span>
+     <span className=" absolute -top-2 left-4 bg-best dark:bg-darkBest dark:text-black text-white text-xs w-4 text-center rounded-full">{cartProducts.length}</span>
     </Link>
     <div className='menuButton'>
      <div
