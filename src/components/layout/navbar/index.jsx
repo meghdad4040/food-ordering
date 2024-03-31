@@ -96,13 +96,13 @@ const Navbar = () => {
      <div className=' flex gap-2'>
       <button
        onClick={() => signOut()}
-       className='text-xs md:text-sm btn btn-sm btn-outline bg-best dark:bg-darkBest text-white rounded-xl dark:border-0'>
+       className='text-[0.6rem] md:text-sm btn px-2 min-h-6 h-6 btn-outline bg-best dark:bg-darkBest text-white rounded-xl dark:border-0'>
        Logout
       </button>
       <Link
-       className='flex text-xs lg:text-base whitespace-nowrap items-center dark:text-darkBest'
+       className='flex text-xs lg:text-base whitespace-nowrap items-center dark:text-darkBest hoverbtn'
        href={"/profile"}>
-       Hello, {userName}
+       Hi, {userName}
       </Link>
      </div>
     )}

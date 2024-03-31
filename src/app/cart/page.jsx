@@ -42,9 +42,9 @@ const page = () => {
     <div>
      {cartProducts?.length === 0 && (<div>No products in your shopping cart</div>)}
      {cartProducts.length > 0 && cartProducts.map((product, index) => (
-      <div key={index} className="flex items-center gap-4 mb-2 border-b py-2">
+      <div key={index} className="flex items-center gap-4 mb-2 border-gray-400 border-b py-2">
        <Image className=" min-w-16 min-h-16 w-24 h-24" src={product.image} width={100} height={100} alt={product.name} />
-       <div className="grow">
+       <div className="grow text-gray-700 dark:text-gray-300">
         <h3 className="text-xs md:text-base font-semibold">{product.name}</h3>
         {product.size && (
          <div className=" text-[0.6rem] md:text-sm">
@@ -59,10 +59,10 @@ const page = () => {
          </div>
         )}
        </div>
-       <div className=" text-xs md:text-lg font-semibold">
+       <div className=" text-gray-600 dark:text-gray-400 text-xs md:text-lg font-semibold">
         ${cartProductPrice(product)}
        </div>
-       <button type="button" className="constant-tilt-shake" onClick={() => removeCartProduct(index)}>
+       <button type="button" className="text-gray-600 dark:text-gray-400 constant-tilt-shake" onClick={() => removeCartProduct(index)}>
         <FaTrashAlt />
        </button>
       </div>
